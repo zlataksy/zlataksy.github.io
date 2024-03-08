@@ -148,7 +148,7 @@ a:focus {
 
 .navbar .navbar-brand {
     margin: 0;
-    font-size: 35px;
+    font-size: 45px;
     line-height: 0px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -1496,6 +1496,7 @@ a:focus {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer .footer-menu p a {
@@ -1600,5 +1601,9 @@ a:focus {
         font-size: 16px;
         line-height: 16px;
         padding: 0 5px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 25px;
     }
 }
