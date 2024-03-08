@@ -4,8 +4,9 @@
     // loader
     var loader = function () {
         setTimeout(function () {
-            if ($('#loader').length > 0) {
-                $('#loader').removeClass('show');
+            const $loader = $('#loader');
+            if ($loader.length > 0) {
+                $loader.removeClass('show');
             }
         }, 1);
     };
@@ -41,7 +42,7 @@
     
     
     // Smooth scrolling on the navbar links
-    $(".navbar-nav a").on('click', function (event) {
+    $(".navbar-nav a, .toContact").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
             
@@ -58,9 +59,9 @@
     
     
     // Typed Initiate
-    if ($('.hero .hero-text h2').length == 1) {
+    if ($('.hero .hero-text h2').length === 1) {
         var typed_strings = $('.hero .hero-text .typed-text').text();
-        var typed = new Typed('.hero .hero-text h2', {
+        new Typed('.hero .hero-text h2', {
             strings: typed_strings.split(', '),
             typeSpeed: 100,
             backSpeed: 20,
