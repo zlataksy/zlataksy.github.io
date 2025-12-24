@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     videos.forEach(video => {
         observer.observe(video);
-        
+
         // Open modal on click
         video.parentElement.addEventListener('click', (e) => {
             // Don't open modal if clicking the sound toggle
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
             const video = toggle.parentElement.querySelector('video');
             video.muted = !video.muted;
-            
+
             const icon = toggle.querySelector('i');
             if (video.muted) {
                 icon.classList.replace('fa-volume-up', 'fa-volume-mute');
