@@ -102,12 +102,20 @@ h3 {
     margin-bottom: 40px;
 }
 
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-4 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .video-item {
@@ -182,6 +190,32 @@ h3 {
     width: 40px;
 }
 
+.contact-info a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+}
+
+.credentials {
+    margin-top: 2rem;
+}
+
+.credentials .name {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.credentials .location {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
 /* Lightbox Modal */
 .modal {
     display: none;
@@ -221,8 +255,10 @@ h3 {
         font-size: 4rem;
     }
 
+    .grid-5,
     .grid-4,
-    .grid-3 {
+    .grid-3,
+    .grid-2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -242,8 +278,10 @@ h3 {
         font-size: 3rem;
     }
 
+    .grid-5,
     .grid-4,
-    .grid-3 {
+    .grid-3,
+    .grid-2 {
         grid-template-columns: 1fr;
     }
 
