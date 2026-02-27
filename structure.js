@@ -6,6 +6,12 @@ module.exports = {
             type: "static"
         },
         {
+            id: "services",
+            title: "Services",
+            type: "dynamic",
+            subtype: "services"
+        },
+        {
             id: "ugc-grwm",
             title: "GRWM, Street & Unpacking",
             folder: "img/portfolio/video/2_GRWM_Street_Unpacking",
@@ -27,6 +33,12 @@ module.exports = {
             id: "video-editing",
             title: "Video Editing",
             folder: "img/portfolio/video/5_videoEditing",
+            type: "dynamic"
+        },
+        {
+            id: "backstages",
+            title: "Backstages",
+            folder: "img/portfolio/video/6_backstages",
             type: "dynamic"
         },
         {
