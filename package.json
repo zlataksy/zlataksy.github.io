@@ -1,0 +1,10 @@
+{
+  "name": "zlataksy-github-io",
+  "private": true,
+  "scripts": {
+    "build": "node generate-site.js"
+  },
+  "dependencies": {
+    "marked": "^15.0.7"
+  }
+}

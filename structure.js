@@ -1,9 +1,21 @@
 module.exports = {
+    nav: [
+        { id: "landing", title: "Home" },
+        { id: "services", title: "Services" },
+        { id: "portfolio", title: "Portfolio" },
+        { id: "contacts", title: "Contacts" }
+    ],
     sections: [
         {
             id: "landing",
             title: "Home",
             type: "static"
+        },
+        {
+            id: "services",
+            title: "Services",
+            type: "services",
+            manifestPath: "content/services-manifest.json"
         },
         {
             id: "ugc-grwm",
@@ -27,6 +39,12 @@ module.exports = {
             id: "video-editing",
             title: "Video Editing",
             folder: "img/portfolio/video/5_videoEditing",
+            type: "dynamic"
+        },
+        {
+            id: "backstages",
+            title: "Backstages",
+            folder: "img/portfolio/video/6_backstages",
             type: "dynamic"
         },
         {
