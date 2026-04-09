@@ -1,4 +1,10 @@
 module.exports = {
+    nav: [
+        { id: "landing", title: "Home" },
+        { id: "services", title: "Services" },
+        { id: "portfolio", title: "Portfolio" },
+        { id: "contacts", title: "Contacts" }
+    ],
     sections: [
         {
             id: "landing",
@@ -8,8 +14,8 @@ module.exports = {
         {
             id: "services",
             title: "Services",
-            type: "dynamic",
-            subtype: "services"
+            type: "services",
+            manifestPath: "content/services-manifest.json"
         },
         {
             id: "ugc-grwm",

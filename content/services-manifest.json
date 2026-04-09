@@ -1,0 +1,30 @@
+{
+  "sectionTitle": "Services",
+  "intro": "",
+  "families": [
+    {
+      "id": "blog",
+      "title": "Blog",
+      "kind": "dir",
+      "path": "content/blog"
+    },
+    {
+      "id": "content-plan",
+      "title": "Content plan",
+      "kind": "dir",
+      "path": "content/content-plan"
+    },
+    {
+      "id": "scenario",
+      "title": "Scenario",
+      "kind": "dir",
+      "path": "content/scenario"
+    },
+    {
+      "id": "other",
+      "title": "Other",
+      "kind": "splitFile",
+      "path": "content/other.md"
+    }
+  ]
+}
